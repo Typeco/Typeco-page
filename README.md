@@ -1,2 +1,0 @@
-# Typeco-page
-hi~
