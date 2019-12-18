@@ -1,3 +1,4 @@
+@import url("homepage.css");
 /*  Header  */
 header{
 	width: 100%;
@@ -32,6 +33,7 @@ ul.main_nav li{
 	margin: 0;
 }
 
+
 ul.main_nav li a{
 	display: block;
 	width: 130px;
@@ -39,7 +41,7 @@ ul.main_nav li a{
 	padding-top: 55px;
 	vertical-align: middle;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 #ccf1cd;
+	text-shadow: 1px 1px 0  #ccf1cd;
 	text-align: center;
 }
 
@@ -51,16 +53,40 @@ ul.main_nav li.current a{
 
 ul.main_nav li a:hover{
 	background: #4FE7AF;
+	box-shadow: 0 4px 0 	#ccf1cd;
 }
 
-/*  Main  */
-/* .main{
-	position: relative;
-	border-left: 1px #e1e0e0 solid;
-	border-right: 1px #e1e0e0 solid;
-	height: auto;
-	overflow: hidden;
-} */  /*页面边框*/
+
+.parent {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_sub {
+    display: none;
+    position: absolute;
+    background-color: #11c4d4;
+}
+
+.parent:hover .dropdown_sub {
+    display: block;
+}
+
+.parent:hover {
+    background-color: #4FE7AF;
+}
+
+ul.main_nav li a.subpage{
+	color: #f5f5f6;
+	box-shadow:none;
+    height:30px;
+    font-size:28px;
+    padding: 10px 0px;
+}
+ul.main_nav li a.subpage:hover{
+	box-shadow: 0 4px 0 	#ccf1cd;
+}
+
 
 article{
 	margin: 80px 0;
@@ -114,6 +140,9 @@ article{
 	border: 2px #A9C8F6 solid;
 	color: #A9C8F6;
 	text-decoration: none;
+	margin-right: 50;
+	margin-left: 50;
+	margin-bottom: 50;
 	margin-top: 14px;
 
 }
@@ -134,9 +163,11 @@ footer{
 	margin-top: -1px;
 	padding: 25px 0;
 	text-align: center;
+	display: inline;
 }
 
 footer .logo_footer{
+	padding:10px 0;
 	width: 150px;
 	align: 'right';
 }
@@ -156,4 +187,3 @@ footer p.rights a{
 	font-weight: bold;
 	color: #939292;
 	text-decoration: none;
-}
